@@ -24,6 +24,7 @@ jobs:
       with:
         path: 'b'
         repository: '2Akuma2/b'
+        token: ${{ secrets.BOT_TOKEN }}
         persist-credentials: true
         fetch-depth: 0
     
