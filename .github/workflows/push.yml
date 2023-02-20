@@ -33,7 +33,7 @@ jobs:
         ls b
     
     - name: copy a.txt
-      run: copy a/a.txt b
+      run: cp a/a.txt b
     
     - name: check a&b
       run: |
