@@ -38,7 +38,6 @@ jobs:
     - name: check a&b
       run: |
         ls a
-        cd ..
         ls b
     
     - name: check for new files
