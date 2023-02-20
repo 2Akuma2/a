@@ -30,7 +30,8 @@ jobs:
     - name: check a&b
       run: |
         ls a
-        ls ../b
+        cd ..
+        ls b
     
     - name: copy a.txt
       run: copy a/a.txt b
