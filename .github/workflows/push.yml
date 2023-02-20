@@ -61,6 +61,6 @@ jobs:
       working-directory: b
       run: |
         git config --global user.name "2Akuma2"
-        git config --global user.email "s.weissflog@aditosoftware.onmicrosoft.com"
+        git config --global user.email "${{ secrets.BOT_EMAIL }}"
         git commit -m "Update executed"
         git push
