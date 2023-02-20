@@ -1,0 +1,26 @@
+on:
+  workflow_dispatch:
+
+
+jobs:
+  test_job:
+    runs-on: ${{ matrix.os }}
+    name: test it!
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+    steps:
+    
+    - name: checkout a
+      uses: actions/checkout@v3
+      with: 
+        path: 'a'
+        persist-credentials: false
+    
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: first-artifact
+        path: a/a.txt
